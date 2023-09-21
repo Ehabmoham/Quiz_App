@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.quiz-app{
+    width: 800px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+.quiz-app .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.quiz-app .question-box{
+    margin-top: 15px;
+    background-color: white;
+    padding: 15px;
+}
+
+.quiz-app .question-box h1{
+    margin: 0;
+    font-size: 25px;
+}
+
+.quiz-app .question-box .answer_box{
+    background-color: #f5f5f5;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-app .question-box .answer_box .answer{
+   padding: 10px;
+   user-select: none;
+   border-bottom: 1px solid #dddd;
+}
+
+.quiz-app .question-box .answer_box .answer label.choosen{
+    color: #03A9F4;
+}
+
+.quiz-app .question-box .answer_box .answer input{
+    margin-right: 10px;
+}
+
+.quiz-app .question-box .answer_box .answer label{
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+
+.quiz-app .question-box .btn{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #03A9F4;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quiz-app .footer{
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-app .footer ul{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-app .footer ul li{
+    width: 15px;
+    height: 15px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+.quiz-app .footer ul li.right{
+    background-color: #2196F3;
+}
+
+.quiz-app .footer ul li.wrong{
+    background-color: #e91e63;
+}
+
+.finish{
+    margin: 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #2196F3;
+}
+
